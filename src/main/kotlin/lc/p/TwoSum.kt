@@ -1,4 +1,4 @@
-package lc
+package lc.p
 
 class TwoSum {
     fun twoSum(nums: IntArray, target: Int): IntArray {

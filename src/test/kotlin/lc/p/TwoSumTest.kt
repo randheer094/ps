@@ -1,7 +1,8 @@
-package lc
+package lc.p
 
 import helper.BaseTest
 import helper.toIntArray
+import lc.p.TwoSum
 import org.junit.jupiter.api.Test
 import kotlin.test.assertContentEquals
 
