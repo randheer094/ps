@@ -1,5 +1,6 @@
 package lc.monthly.oct21
 
+// https://leetcode.com/problems/longest-common-subsequence/
 class LongestCommonSubsequence {
     fun longestCommonSubsequence(text1: String, text2: String): Int {
         val dp = Array(text1.length + 1) { IntArray(text2.length + 1) { 0 } }

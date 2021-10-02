@@ -1,5 +1,6 @@
 package lc.p
 
+// https://leetcode.com/problems/two-sum/
 class TwoSum {
     fun twoSum(nums: IntArray, target: Int): IntArray {
         val result = IntArray(2) { -1 }

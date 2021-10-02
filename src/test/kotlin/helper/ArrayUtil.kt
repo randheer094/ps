@@ -6,9 +6,9 @@ fun String.toIntArray(): IntArray {
 }
 
 inline fun <reified T> String.toArrayOf(): Array<T> {
-    val content = removePrefix("[").removeSuffix("]").split(",")
+    val content = split("],[").map { it.removePrefix("[[").removeSuffix("]]") }
     return when (T::class) {
-        IntArray::class -> content.map { it.toIntArray() }.toTypedArray() as Array<T>
+        IntArray::class -> content.map { it.split(",").map { v -> v.toInt() }.toIntArray() }.toTypedArray() as Array<T>
         else -> content.mapNotNull { it as T }.toTypedArray()
     }
 }
