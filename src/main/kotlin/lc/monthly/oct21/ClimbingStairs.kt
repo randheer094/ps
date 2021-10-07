@@ -1,5 +1,6 @@
 package lc.monthly.oct21
 
+// https://leetcode.com/problems/climbing-stairs/
 class ClimbingStairs {
     fun climbStairs(n: Int): Int {
         if (n <= 2) {
